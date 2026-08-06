@@ -1,0 +1,10 @@
+{
+  "name": "PhysicsAssistant Pro Max",
+  "short_name": "物理助手",
+  "description": "大学物理智能学习助手",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f8fc",
+  "theme_color": "#2563eb",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

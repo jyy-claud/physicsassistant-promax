@@ -1,0 +1,10 @@
+[
+ {"id":"k1","category":"力学","name":"质点运动学","definition":"用位置、速度和加速度描述物体的运动状态。","formulas":["v=dr/dt","a=dv/dt"],"derivation":"速度是位置对时间的一阶导数，加速度是速度对时间的一阶导数。","example":"由 x(t) 求导得到 v(t) 与 a(t)。","traps":["位移不是路程","速度是矢量"],"related":["牛顿第二定律","圆周运动"]},
+ {"id":"k2","category":"力学","name":"质点动力学","definition":"研究力和运动之间的定量关系。","formulas":["F=ma","W=ΔEk"],"derivation":"从动量定理在质量不变时得到 F=ma。","example":"受力分析后列各方向牛顿第二定律。","traps":["只取合外力","惯性系条件"],"related":["功与能","动量守恒"]},
+ {"id":"k3","category":"热学","name":"气体动理论","definition":"以微观分子运动解释宏观热学量。","formulas":["PV=nRT","U=i/2 nRT"],"derivation":"由分子碰撞器壁的动量变化导出压强。","example":"定体升温时压强随热力学温度上升。","traps":["温度用 K","状态量与过程量"],"related":["热力学第一定律"]},
+ {"id":"k4","category":"热学","name":"热力学基础","definition":"研究热、功和内能之间的转化与限制。","formulas":["ΔU=Q-W","η=W/Qh"],"derivation":"能量守恒给出第一定律。","example":"由吸热和做功求内能变化。","traps":["正负号约定","熵是状态函数"],"related":["气体动理论"]},
+ {"id":"k5","category":"电磁学","name":"静电场","definition":"由静止电荷产生的电场。","formulas":["F=kq1q2/r²","∮E·dS=Q/ε0"],"derivation":"叠加原理结合对称性可导出多种场分布。","example":"用高斯定理求球对称电场。","traps":["高斯面不等于真实表面","电势是标量"],"related":["电容器","电势"]},
+ {"id":"k6","category":"电磁学","name":"恒定磁场","definition":"由稳恒电流产生的磁场及其作用。","formulas":["F=qvBsinθ","∮B·dl=μ0I"],"derivation":"毕奥-萨伐尔定律经环路积分得到安培环路定理。","example":"带电粒子垂直入射后做匀速圆周运动。","traps":["磁力不做功","右手与左手定则"],"related":["电磁感应"]},
+ {"id":"k7","category":"光学","name":"波动光学","definition":"以波的叠加、干涉和衍射解释光现象。","formulas":["v=λf","δ=kλ"],"derivation":"相位差决定叠加后强弱。","example":"双缝明纹由光程差整数倍波长产生。","traps":["光程差","半波损失"],"related":["振动与波动"]},
+ {"id":"k8","category":"近代物理","name":"量子与相对论基础","definition":"描述微观粒子与高速运动的基本理论。","formulas":["E=hν","λ=h/p","E=mc²"],"derivation":"光电效应揭示光的量子性。","example":"用光电方程判断遏止电压。","traps":["光强与频率作用不同","波粒二象性"],"related":["原子物理"]}
+]

@@ -1,0 +1,2162 @@
+[
+  {
+    "id": "m01",
+    "chapter": "力学",
+    "knowledgePoint": "匀变速直线运动",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "物体初速度为 2 m/s、加速度为 3 m/s²，2 s 后速度为？",
+    "options": [
+      "5 m/s",
+      "8 m/s",
+      "10 m/s",
+      "12 m/s"
+    ],
+    "answer": 1,
+    "analysis": "v=v₀+at=2+3×2=8 m/s。",
+    "formula": "v=v₀+at",
+    "mistakeReason": "漏乘时间或混淆位移公式。"
+  },
+  {
+    "id": "m02",
+    "chapter": "力学",
+    "knowledgePoint": "牛顿第二定律",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "质量 2 kg 的物体受合力 10 N，产生的加速度为？",
+    "options": [
+      "2 m/s²",
+      "5 m/s²",
+      "10 m/s²",
+      "20 m/s²"
+    ],
+    "answer": 1,
+    "analysis": "a=F/m=10/2=5 m/s²。",
+    "formula": "F=ma",
+    "mistakeReason": "未先求合力。"
+  },
+  {
+    "id": "m03",
+    "chapter": "力学",
+    "knowledgePoint": "功与能",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "水平拉力 10 N 拉物体移动 3 m，夹角 60°，拉力做功为？",
+    "options": [
+      "0 J",
+      "15 J",
+      "30 J",
+      "60 J"
+    ],
+    "answer": 1,
+    "analysis": "W=Fs cosθ=10×3×0.5=15 J。",
+    "formula": "W=Fs cosθ",
+    "mistakeReason": "忘记投影因子 cosθ。"
+  },
+  {
+    "id": "m04",
+    "chapter": "力学",
+    "knowledgePoint": "圆周运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "半径 2 m 的圆周运动，线速度 4 m/s，向心加速度为？",
+    "options": [
+      "2 m/s²",
+      "4 m/s²",
+      "8 m/s²",
+      "16 m/s²"
+    ],
+    "answer": 2,
+    "analysis": "aₙ=v²/r=16/2=8 m/s²。",
+    "formula": "aₙ=v²/r",
+    "mistakeReason": "把 r 放在分子。"
+  },
+  {
+    "id": "m05",
+    "chapter": "力学",
+    "knowledgePoint": "角动量守恒",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "无外力矩作用时，刚体转动过程中保持不变的是？",
+    "options": [
+      "角速度",
+      "转动惯量",
+      "角动量",
+      "动能"
+    ],
+    "answer": 2,
+    "analysis": "外力矩为零时角动量守恒。",
+    "formula": "L=Iω",
+    "mistakeReason": "误以为角速度必定守恒。"
+  },
+  {
+    "id": "t01",
+    "chapter": "热学",
+    "knowledgePoint": "理想气体状态方程",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "一定量理想气体温度升高、体积不变，则压强如何变化？",
+    "options": [
+      "减小",
+      "不变",
+      "增大",
+      "先增后减"
+    ],
+    "answer": 2,
+    "analysis": "PV=nRT，V、n 不变时 P 与 T 成正比。",
+    "formula": "PV=nRT",
+    "mistakeReason": "温度必须使用开尔文温标。"
+  },
+  {
+    "id": "t02",
+    "chapter": "热学",
+    "knowledgePoint": "热力学第一定律",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "系统吸热 100 J，对外做功 40 J，内能变化为？",
+    "options": [
+      "-140 J",
+      "-60 J",
+      "60 J",
+      "140 J"
+    ],
+    "answer": 2,
+    "analysis": "ΔU=Q-W=100-40=60 J。",
+    "formula": "ΔU=Q-W",
+    "mistakeReason": "功的正负号约定混乱。"
+  },
+  {
+    "id": "e01",
+    "chapter": "电磁学",
+    "knowledgePoint": "库仑定律",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "两点电荷间距离变为原来的 2 倍，库仑力变为原来的？",
+    "options": [
+      "2 倍",
+      "1/2",
+      "1/4",
+      "4 倍"
+    ],
+    "answer": 2,
+    "analysis": "F 与 r² 成反比。",
+    "formula": "F=kq₁q₂/r²",
+    "mistakeReason": "错把平方反比当线性反比。"
+  },
+  {
+    "id": "e02",
+    "chapter": "电磁学",
+    "knowledgePoint": "高斯定理",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "真空中闭合曲面包围净电荷 Q，其电通量为？",
+    "options": [
+      "Qε₀",
+      "Q/ε₀",
+      "0",
+      "kQ"
+    ],
+    "answer": 1,
+    "analysis": "高斯定理 Φ=Q内/ε₀。",
+    "formula": "∮E·dS=Q/ε₀",
+    "mistakeReason": "混淆电场强度与通量。"
+  },
+  {
+    "id": "e03",
+    "chapter": "电磁学",
+    "knowledgePoint": "洛伦兹力",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "带电粒子速度与匀强磁场平行时，磁场力大小为？",
+    "options": [
+      "qvB",
+      "qvB/2",
+      "0",
+      "与质量有关"
+    ],
+    "answer": 2,
+    "analysis": "F=qvBsinθ，θ=0。",
+    "formula": "F=qvBsinθ",
+    "mistakeReason": "忽略速度与磁场方向夹角。"
+  },
+  {
+    "id": "e04",
+    "chapter": "电磁学",
+    "knowledgePoint": "法拉第定律",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "线圈磁通量变化越快，感应电动势大小？",
+    "options": [
+      "越小",
+      "不变",
+      "越大",
+      "为零"
+    ],
+    "answer": 2,
+    "analysis": "感应电动势绝对值等于磁通量变化率。",
+    "formula": "ε=-N dΦ/dt",
+    "mistakeReason": "忽略负号仅表示楞次定律方向。"
+  },
+  {
+    "id": "o01",
+    "chapter": "光学",
+    "knowledgePoint": "杨氏双缝",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "杨氏双缝实验中，明纹条件是光程差为？",
+    "options": [
+      "(k+1/2)λ",
+      "kλ",
+      "λ/4",
+      "与波长无关"
+    ],
+    "answer": 1,
+    "analysis": "相长干涉的光程差为整数倍波长。",
+    "formula": "δ=kλ",
+    "mistakeReason": "与暗纹条件混淆。"
+  },
+  {
+    "id": "o02",
+    "chapter": "光学",
+    "knowledgePoint": "多普勒效应",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "声源向静止观察者靠近，观察到的频率？",
+    "options": [
+      "降低",
+      "升高",
+      "不变",
+      "先降低后升高"
+    ],
+    "answer": 1,
+    "analysis": "波前被压缩，接收频率升高。",
+    "formula": "f'=f v/(v-vs)",
+    "mistakeReason": "未区分声源运动和观察者运动。"
+  },
+  {
+    "id": "n01",
+    "chapter": "近代物理",
+    "knowledgePoint": "光电效应",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "在频率大于截止频率时，提高入射光强主要会增加？",
+    "options": [
+      "遏止电压",
+      "逸出功",
+      "光电子数",
+      "截止频率"
+    ],
+    "answer": 2,
+    "analysis": "光强增加意味着单位时间光子数增加。",
+    "formula": "E=hν",
+    "mistakeReason": "把光强作用与频率作用混淆。"
+  },
+  {
+    "id": "n02",
+    "chapter": "近代物理",
+    "knowledgePoint": "德布罗意波",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "粒子动量增大时，其德布罗意波长？",
+    "options": [
+      "增大",
+      "减小",
+      "不变",
+      "先增后减"
+    ],
+    "answer": 1,
+    "analysis": "λ=h/p，动量越大波长越短。",
+    "formula": "λ=h/p",
+    "mistakeReason": "忘记反比关系。"
+  },
+  {
+    "id": "q016",
+    "chapter": "力学",
+    "knowledgePoint": "匀变速直线运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "物体初速度为 2 m/s、加速度为 3 m/s²，2 s 后速度为？（训练变式 16）",
+    "options": [
+      "5 m/s",
+      "8 m/s",
+      "10 m/s",
+      "12 m/s"
+    ],
+    "answer": 1,
+    "analysis": "v=v₀+at=2+3×2=8 m/s。",
+    "formula": "v=v₀+at",
+    "mistakeReason": "漏乘时间或混淆位移公式。"
+  },
+  {
+    "id": "q017",
+    "chapter": "力学",
+    "knowledgePoint": "牛顿第二定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "质量 2 kg 的物体受合力 10 N，产生的加速度为？（训练变式 17）",
+    "options": [
+      "2 m/s²",
+      "5 m/s²",
+      "10 m/s²",
+      "20 m/s²"
+    ],
+    "answer": 1,
+    "analysis": "a=F/m=10/2=5 m/s²。",
+    "formula": "F=ma",
+    "mistakeReason": "未先求合力。"
+  },
+  {
+    "id": "q018",
+    "chapter": "力学",
+    "knowledgePoint": "功与能",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "水平拉力 10 N 拉物体移动 3 m，夹角 60°，拉力做功为？（训练变式 18）",
+    "options": [
+      "0 J",
+      "15 J",
+      "30 J",
+      "60 J"
+    ],
+    "answer": 1,
+    "analysis": "W=Fs cosθ=10×3×0.5=15 J。",
+    "formula": "W=Fs cosθ",
+    "mistakeReason": "忘记投影因子 cosθ。"
+  },
+  {
+    "id": "q019",
+    "chapter": "力学",
+    "knowledgePoint": "圆周运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "半径 2 m 的圆周运动，线速度 4 m/s，向心加速度为？（训练变式 19）",
+    "options": [
+      "2 m/s²",
+      "4 m/s²",
+      "8 m/s²",
+      "16 m/s²"
+    ],
+    "answer": 2,
+    "analysis": "aₙ=v²/r=16/2=8 m/s²。",
+    "formula": "aₙ=v²/r",
+    "mistakeReason": "把 r 放在分子。"
+  },
+  {
+    "id": "q020",
+    "chapter": "力学",
+    "knowledgePoint": "角动量守恒",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "无外力矩作用时，刚体转动过程中保持不变的是？（训练变式 20）",
+    "options": [
+      "角速度",
+      "转动惯量",
+      "角动量",
+      "动能"
+    ],
+    "answer": 2,
+    "analysis": "外力矩为零时角动量守恒。",
+    "formula": "L=Iω",
+    "mistakeReason": "误以为角速度必定守恒。"
+  },
+  {
+    "id": "q021",
+    "chapter": "热学",
+    "knowledgePoint": "理想气体状态方程",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "一定量理想气体温度升高、体积不变，则压强如何变化？（训练变式 21）",
+    "options": [
+      "减小",
+      "不变",
+      "增大",
+      "先增后减"
+    ],
+    "answer": 2,
+    "analysis": "PV=nRT，V、n 不变时 P 与 T 成正比。",
+    "formula": "PV=nRT",
+    "mistakeReason": "温度必须使用开尔文温标。"
+  },
+  {
+    "id": "q022",
+    "chapter": "热学",
+    "knowledgePoint": "热力学第一定律",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "系统吸热 100 J，对外做功 40 J，内能变化为？（训练变式 22）",
+    "options": [
+      "-140 J",
+      "-60 J",
+      "60 J",
+      "140 J"
+    ],
+    "answer": 2,
+    "analysis": "ΔU=Q-W=100-40=60 J。",
+    "formula": "ΔU=Q-W",
+    "mistakeReason": "功的正负号约定混乱。"
+  },
+  {
+    "id": "q023",
+    "chapter": "电磁学",
+    "knowledgePoint": "库仑定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "两点电荷间距离变为原来的 2 倍，库仑力变为原来的？（训练变式 23）",
+    "options": [
+      "2 倍",
+      "1/2",
+      "1/4",
+      "4 倍"
+    ],
+    "answer": 2,
+    "analysis": "F 与 r² 成反比。",
+    "formula": "F=kq₁q₂/r²",
+    "mistakeReason": "错把平方反比当线性反比。"
+  },
+  {
+    "id": "q024",
+    "chapter": "电磁学",
+    "knowledgePoint": "高斯定理",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "真空中闭合曲面包围净电荷 Q，其电通量为？（训练变式 24）",
+    "options": [
+      "Qε₀",
+      "Q/ε₀",
+      "0",
+      "kQ"
+    ],
+    "answer": 1,
+    "analysis": "高斯定理 Φ=Q内/ε₀。",
+    "formula": "∮E·dS=Q/ε₀",
+    "mistakeReason": "混淆电场强度与通量。"
+  },
+  {
+    "id": "q025",
+    "chapter": "电磁学",
+    "knowledgePoint": "洛伦兹力",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "带电粒子速度与匀强磁场平行时，磁场力大小为？（训练变式 25）",
+    "options": [
+      "qvB",
+      "qvB/2",
+      "0",
+      "与质量有关"
+    ],
+    "answer": 2,
+    "analysis": "F=qvBsinθ，θ=0。",
+    "formula": "F=qvBsinθ",
+    "mistakeReason": "忽略速度与磁场方向夹角。"
+  },
+  {
+    "id": "q026",
+    "chapter": "电磁学",
+    "knowledgePoint": "法拉第定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "线圈磁通量变化越快，感应电动势大小？（训练变式 26）",
+    "options": [
+      "越小",
+      "不变",
+      "越大",
+      "为零"
+    ],
+    "answer": 2,
+    "analysis": "感应电动势绝对值等于磁通量变化率。",
+    "formula": "ε=-N dΦ/dt",
+    "mistakeReason": "忽略负号仅表示楞次定律方向。"
+  },
+  {
+    "id": "q027",
+    "chapter": "光学",
+    "knowledgePoint": "杨氏双缝",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "杨氏双缝实验中，明纹条件是光程差为？（训练变式 27）",
+    "options": [
+      "(k+1/2)λ",
+      "kλ",
+      "λ/4",
+      "与波长无关"
+    ],
+    "answer": 1,
+    "analysis": "相长干涉的光程差为整数倍波长。",
+    "formula": "δ=kλ",
+    "mistakeReason": "与暗纹条件混淆。"
+  },
+  {
+    "id": "q028",
+    "chapter": "光学",
+    "knowledgePoint": "多普勒效应",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "声源向静止观察者靠近，观察到的频率？（训练变式 28）",
+    "options": [
+      "降低",
+      "升高",
+      "不变",
+      "先降低后升高"
+    ],
+    "answer": 1,
+    "analysis": "波前被压缩，接收频率升高。",
+    "formula": "f'=f v/(v-vs)",
+    "mistakeReason": "未区分声源运动和观察者运动。"
+  },
+  {
+    "id": "q029",
+    "chapter": "近代物理",
+    "knowledgePoint": "光电效应",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "在频率大于截止频率时，提高入射光强主要会增加？（训练变式 29）",
+    "options": [
+      "遏止电压",
+      "逸出功",
+      "光电子数",
+      "截止频率"
+    ],
+    "answer": 2,
+    "analysis": "光强增加意味着单位时间光子数增加。",
+    "formula": "E=hν",
+    "mistakeReason": "把光强作用与频率作用混淆。"
+  },
+  {
+    "id": "q030",
+    "chapter": "近代物理",
+    "knowledgePoint": "德布罗意波",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "粒子动量增大时，其德布罗意波长？（训练变式 30）",
+    "options": [
+      "增大",
+      "减小",
+      "不变",
+      "先增后减"
+    ],
+    "answer": 1,
+    "analysis": "λ=h/p，动量越大波长越短。",
+    "formula": "λ=h/p",
+    "mistakeReason": "忘记反比关系。"
+  },
+  {
+    "id": "q031",
+    "chapter": "力学",
+    "knowledgePoint": "匀变速直线运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "物体初速度为 2 m/s、加速度为 3 m/s²，2 s 后速度为？（训练变式 31）",
+    "options": [
+      "5 m/s",
+      "8 m/s",
+      "10 m/s",
+      "12 m/s"
+    ],
+    "answer": 1,
+    "analysis": "v=v₀+at=2+3×2=8 m/s。",
+    "formula": "v=v₀+at",
+    "mistakeReason": "漏乘时间或混淆位移公式。"
+  },
+  {
+    "id": "q032",
+    "chapter": "力学",
+    "knowledgePoint": "牛顿第二定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "质量 2 kg 的物体受合力 10 N，产生的加速度为？（训练变式 32）",
+    "options": [
+      "2 m/s²",
+      "5 m/s²",
+      "10 m/s²",
+      "20 m/s²"
+    ],
+    "answer": 1,
+    "analysis": "a=F/m=10/2=5 m/s²。",
+    "formula": "F=ma",
+    "mistakeReason": "未先求合力。"
+  },
+  {
+    "id": "q033",
+    "chapter": "力学",
+    "knowledgePoint": "功与能",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "水平拉力 10 N 拉物体移动 3 m，夹角 60°，拉力做功为？（训练变式 33）",
+    "options": [
+      "0 J",
+      "15 J",
+      "30 J",
+      "60 J"
+    ],
+    "answer": 1,
+    "analysis": "W=Fs cosθ=10×3×0.5=15 J。",
+    "formula": "W=Fs cosθ",
+    "mistakeReason": "忘记投影因子 cosθ。"
+  },
+  {
+    "id": "q034",
+    "chapter": "力学",
+    "knowledgePoint": "圆周运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "半径 2 m 的圆周运动，线速度 4 m/s，向心加速度为？（训练变式 34）",
+    "options": [
+      "2 m/s²",
+      "4 m/s²",
+      "8 m/s²",
+      "16 m/s²"
+    ],
+    "answer": 2,
+    "analysis": "aₙ=v²/r=16/2=8 m/s²。",
+    "formula": "aₙ=v²/r",
+    "mistakeReason": "把 r 放在分子。"
+  },
+  {
+    "id": "q035",
+    "chapter": "力学",
+    "knowledgePoint": "角动量守恒",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "无外力矩作用时，刚体转动过程中保持不变的是？（训练变式 35）",
+    "options": [
+      "角速度",
+      "转动惯量",
+      "角动量",
+      "动能"
+    ],
+    "answer": 2,
+    "analysis": "外力矩为零时角动量守恒。",
+    "formula": "L=Iω",
+    "mistakeReason": "误以为角速度必定守恒。"
+  },
+  {
+    "id": "q036",
+    "chapter": "热学",
+    "knowledgePoint": "理想气体状态方程",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "一定量理想气体温度升高、体积不变，则压强如何变化？（训练变式 36）",
+    "options": [
+      "减小",
+      "不变",
+      "增大",
+      "先增后减"
+    ],
+    "answer": 2,
+    "analysis": "PV=nRT，V、n 不变时 P 与 T 成正比。",
+    "formula": "PV=nRT",
+    "mistakeReason": "温度必须使用开尔文温标。"
+  },
+  {
+    "id": "q037",
+    "chapter": "热学",
+    "knowledgePoint": "热力学第一定律",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "系统吸热 100 J，对外做功 40 J，内能变化为？（训练变式 37）",
+    "options": [
+      "-140 J",
+      "-60 J",
+      "60 J",
+      "140 J"
+    ],
+    "answer": 2,
+    "analysis": "ΔU=Q-W=100-40=60 J。",
+    "formula": "ΔU=Q-W",
+    "mistakeReason": "功的正负号约定混乱。"
+  },
+  {
+    "id": "q038",
+    "chapter": "电磁学",
+    "knowledgePoint": "库仑定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "两点电荷间距离变为原来的 2 倍，库仑力变为原来的？（训练变式 38）",
+    "options": [
+      "2 倍",
+      "1/2",
+      "1/4",
+      "4 倍"
+    ],
+    "answer": 2,
+    "analysis": "F 与 r² 成反比。",
+    "formula": "F=kq₁q₂/r²",
+    "mistakeReason": "错把平方反比当线性反比。"
+  },
+  {
+    "id": "q039",
+    "chapter": "电磁学",
+    "knowledgePoint": "高斯定理",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "真空中闭合曲面包围净电荷 Q，其电通量为？（训练变式 39）",
+    "options": [
+      "Qε₀",
+      "Q/ε₀",
+      "0",
+      "kQ"
+    ],
+    "answer": 1,
+    "analysis": "高斯定理 Φ=Q内/ε₀。",
+    "formula": "∮E·dS=Q/ε₀",
+    "mistakeReason": "混淆电场强度与通量。"
+  },
+  {
+    "id": "q040",
+    "chapter": "电磁学",
+    "knowledgePoint": "洛伦兹力",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "带电粒子速度与匀强磁场平行时，磁场力大小为？（训练变式 40）",
+    "options": [
+      "qvB",
+      "qvB/2",
+      "0",
+      "与质量有关"
+    ],
+    "answer": 2,
+    "analysis": "F=qvBsinθ，θ=0。",
+    "formula": "F=qvBsinθ",
+    "mistakeReason": "忽略速度与磁场方向夹角。"
+  },
+  {
+    "id": "q041",
+    "chapter": "电磁学",
+    "knowledgePoint": "法拉第定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "线圈磁通量变化越快，感应电动势大小？（训练变式 41）",
+    "options": [
+      "越小",
+      "不变",
+      "越大",
+      "为零"
+    ],
+    "answer": 2,
+    "analysis": "感应电动势绝对值等于磁通量变化率。",
+    "formula": "ε=-N dΦ/dt",
+    "mistakeReason": "忽略负号仅表示楞次定律方向。"
+  },
+  {
+    "id": "q042",
+    "chapter": "光学",
+    "knowledgePoint": "杨氏双缝",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "杨氏双缝实验中，明纹条件是光程差为？（训练变式 42）",
+    "options": [
+      "(k+1/2)λ",
+      "kλ",
+      "λ/4",
+      "与波长无关"
+    ],
+    "answer": 1,
+    "analysis": "相长干涉的光程差为整数倍波长。",
+    "formula": "δ=kλ",
+    "mistakeReason": "与暗纹条件混淆。"
+  },
+  {
+    "id": "q043",
+    "chapter": "光学",
+    "knowledgePoint": "多普勒效应",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "声源向静止观察者靠近，观察到的频率？（训练变式 43）",
+    "options": [
+      "降低",
+      "升高",
+      "不变",
+      "先降低后升高"
+    ],
+    "answer": 1,
+    "analysis": "波前被压缩，接收频率升高。",
+    "formula": "f'=f v/(v-vs)",
+    "mistakeReason": "未区分声源运动和观察者运动。"
+  },
+  {
+    "id": "q044",
+    "chapter": "近代物理",
+    "knowledgePoint": "光电效应",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "在频率大于截止频率时，提高入射光强主要会增加？（训练变式 44）",
+    "options": [
+      "遏止电压",
+      "逸出功",
+      "光电子数",
+      "截止频率"
+    ],
+    "answer": 2,
+    "analysis": "光强增加意味着单位时间光子数增加。",
+    "formula": "E=hν",
+    "mistakeReason": "把光强作用与频率作用混淆。"
+  },
+  {
+    "id": "q045",
+    "chapter": "近代物理",
+    "knowledgePoint": "德布罗意波",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "粒子动量增大时，其德布罗意波长？（训练变式 45）",
+    "options": [
+      "增大",
+      "减小",
+      "不变",
+      "先增后减"
+    ],
+    "answer": 1,
+    "analysis": "λ=h/p，动量越大波长越短。",
+    "formula": "λ=h/p",
+    "mistakeReason": "忘记反比关系。"
+  },
+  {
+    "id": "q046",
+    "chapter": "力学",
+    "knowledgePoint": "匀变速直线运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "物体初速度为 2 m/s、加速度为 3 m/s²，2 s 后速度为？（训练变式 46）",
+    "options": [
+      "5 m/s",
+      "8 m/s",
+      "10 m/s",
+      "12 m/s"
+    ],
+    "answer": 1,
+    "analysis": "v=v₀+at=2+3×2=8 m/s。",
+    "formula": "v=v₀+at",
+    "mistakeReason": "漏乘时间或混淆位移公式。"
+  },
+  {
+    "id": "q047",
+    "chapter": "力学",
+    "knowledgePoint": "牛顿第二定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "质量 2 kg 的物体受合力 10 N，产生的加速度为？（训练变式 47）",
+    "options": [
+      "2 m/s²",
+      "5 m/s²",
+      "10 m/s²",
+      "20 m/s²"
+    ],
+    "answer": 1,
+    "analysis": "a=F/m=10/2=5 m/s²。",
+    "formula": "F=ma",
+    "mistakeReason": "未先求合力。"
+  },
+  {
+    "id": "q048",
+    "chapter": "力学",
+    "knowledgePoint": "功与能",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "水平拉力 10 N 拉物体移动 3 m，夹角 60°，拉力做功为？（训练变式 48）",
+    "options": [
+      "0 J",
+      "15 J",
+      "30 J",
+      "60 J"
+    ],
+    "answer": 1,
+    "analysis": "W=Fs cosθ=10×3×0.5=15 J。",
+    "formula": "W=Fs cosθ",
+    "mistakeReason": "忘记投影因子 cosθ。"
+  },
+  {
+    "id": "q049",
+    "chapter": "力学",
+    "knowledgePoint": "圆周运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "半径 2 m 的圆周运动，线速度 4 m/s，向心加速度为？（训练变式 49）",
+    "options": [
+      "2 m/s²",
+      "4 m/s²",
+      "8 m/s²",
+      "16 m/s²"
+    ],
+    "answer": 2,
+    "analysis": "aₙ=v²/r=16/2=8 m/s²。",
+    "formula": "aₙ=v²/r",
+    "mistakeReason": "把 r 放在分子。"
+  },
+  {
+    "id": "q050",
+    "chapter": "力学",
+    "knowledgePoint": "角动量守恒",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "无外力矩作用时，刚体转动过程中保持不变的是？（训练变式 50）",
+    "options": [
+      "角速度",
+      "转动惯量",
+      "角动量",
+      "动能"
+    ],
+    "answer": 2,
+    "analysis": "外力矩为零时角动量守恒。",
+    "formula": "L=Iω",
+    "mistakeReason": "误以为角速度必定守恒。"
+  },
+  {
+    "id": "q051",
+    "chapter": "热学",
+    "knowledgePoint": "理想气体状态方程",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "一定量理想气体温度升高、体积不变，则压强如何变化？（训练变式 51）",
+    "options": [
+      "减小",
+      "不变",
+      "增大",
+      "先增后减"
+    ],
+    "answer": 2,
+    "analysis": "PV=nRT，V、n 不变时 P 与 T 成正比。",
+    "formula": "PV=nRT",
+    "mistakeReason": "温度必须使用开尔文温标。"
+  },
+  {
+    "id": "q052",
+    "chapter": "热学",
+    "knowledgePoint": "热力学第一定律",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "系统吸热 100 J，对外做功 40 J，内能变化为？（训练变式 52）",
+    "options": [
+      "-140 J",
+      "-60 J",
+      "60 J",
+      "140 J"
+    ],
+    "answer": 2,
+    "analysis": "ΔU=Q-W=100-40=60 J。",
+    "formula": "ΔU=Q-W",
+    "mistakeReason": "功的正负号约定混乱。"
+  },
+  {
+    "id": "q053",
+    "chapter": "电磁学",
+    "knowledgePoint": "库仑定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "两点电荷间距离变为原来的 2 倍，库仑力变为原来的？（训练变式 53）",
+    "options": [
+      "2 倍",
+      "1/2",
+      "1/4",
+      "4 倍"
+    ],
+    "answer": 2,
+    "analysis": "F 与 r² 成反比。",
+    "formula": "F=kq₁q₂/r²",
+    "mistakeReason": "错把平方反比当线性反比。"
+  },
+  {
+    "id": "q054",
+    "chapter": "电磁学",
+    "knowledgePoint": "高斯定理",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "真空中闭合曲面包围净电荷 Q，其电通量为？（训练变式 54）",
+    "options": [
+      "Qε₀",
+      "Q/ε₀",
+      "0",
+      "kQ"
+    ],
+    "answer": 1,
+    "analysis": "高斯定理 Φ=Q内/ε₀。",
+    "formula": "∮E·dS=Q/ε₀",
+    "mistakeReason": "混淆电场强度与通量。"
+  },
+  {
+    "id": "q055",
+    "chapter": "电磁学",
+    "knowledgePoint": "洛伦兹力",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "带电粒子速度与匀强磁场平行时，磁场力大小为？（训练变式 55）",
+    "options": [
+      "qvB",
+      "qvB/2",
+      "0",
+      "与质量有关"
+    ],
+    "answer": 2,
+    "analysis": "F=qvBsinθ，θ=0。",
+    "formula": "F=qvBsinθ",
+    "mistakeReason": "忽略速度与磁场方向夹角。"
+  },
+  {
+    "id": "q056",
+    "chapter": "电磁学",
+    "knowledgePoint": "法拉第定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "线圈磁通量变化越快，感应电动势大小？（训练变式 56）",
+    "options": [
+      "越小",
+      "不变",
+      "越大",
+      "为零"
+    ],
+    "answer": 2,
+    "analysis": "感应电动势绝对值等于磁通量变化率。",
+    "formula": "ε=-N dΦ/dt",
+    "mistakeReason": "忽略负号仅表示楞次定律方向。"
+  },
+  {
+    "id": "q057",
+    "chapter": "光学",
+    "knowledgePoint": "杨氏双缝",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "杨氏双缝实验中，明纹条件是光程差为？（训练变式 57）",
+    "options": [
+      "(k+1/2)λ",
+      "kλ",
+      "λ/4",
+      "与波长无关"
+    ],
+    "answer": 1,
+    "analysis": "相长干涉的光程差为整数倍波长。",
+    "formula": "δ=kλ",
+    "mistakeReason": "与暗纹条件混淆。"
+  },
+  {
+    "id": "q058",
+    "chapter": "光学",
+    "knowledgePoint": "多普勒效应",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "声源向静止观察者靠近，观察到的频率？（训练变式 58）",
+    "options": [
+      "降低",
+      "升高",
+      "不变",
+      "先降低后升高"
+    ],
+    "answer": 1,
+    "analysis": "波前被压缩，接收频率升高。",
+    "formula": "f'=f v/(v-vs)",
+    "mistakeReason": "未区分声源运动和观察者运动。"
+  },
+  {
+    "id": "q059",
+    "chapter": "近代物理",
+    "knowledgePoint": "光电效应",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "在频率大于截止频率时，提高入射光强主要会增加？（训练变式 59）",
+    "options": [
+      "遏止电压",
+      "逸出功",
+      "光电子数",
+      "截止频率"
+    ],
+    "answer": 2,
+    "analysis": "光强增加意味着单位时间光子数增加。",
+    "formula": "E=hν",
+    "mistakeReason": "把光强作用与频率作用混淆。"
+  },
+  {
+    "id": "q060",
+    "chapter": "近代物理",
+    "knowledgePoint": "德布罗意波",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "粒子动量增大时，其德布罗意波长？（训练变式 60）",
+    "options": [
+      "增大",
+      "减小",
+      "不变",
+      "先增后减"
+    ],
+    "answer": 1,
+    "analysis": "λ=h/p，动量越大波长越短。",
+    "formula": "λ=h/p",
+    "mistakeReason": "忘记反比关系。"
+  },
+  {
+    "id": "q061",
+    "chapter": "力学",
+    "knowledgePoint": "匀变速直线运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "物体初速度为 2 m/s、加速度为 3 m/s²，2 s 后速度为？（训练变式 61）",
+    "options": [
+      "5 m/s",
+      "8 m/s",
+      "10 m/s",
+      "12 m/s"
+    ],
+    "answer": 1,
+    "analysis": "v=v₀+at=2+3×2=8 m/s。",
+    "formula": "v=v₀+at",
+    "mistakeReason": "漏乘时间或混淆位移公式。"
+  },
+  {
+    "id": "q062",
+    "chapter": "力学",
+    "knowledgePoint": "牛顿第二定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "质量 2 kg 的物体受合力 10 N，产生的加速度为？（训练变式 62）",
+    "options": [
+      "2 m/s²",
+      "5 m/s²",
+      "10 m/s²",
+      "20 m/s²"
+    ],
+    "answer": 1,
+    "analysis": "a=F/m=10/2=5 m/s²。",
+    "formula": "F=ma",
+    "mistakeReason": "未先求合力。"
+  },
+  {
+    "id": "q063",
+    "chapter": "力学",
+    "knowledgePoint": "功与能",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "水平拉力 10 N 拉物体移动 3 m，夹角 60°，拉力做功为？（训练变式 63）",
+    "options": [
+      "0 J",
+      "15 J",
+      "30 J",
+      "60 J"
+    ],
+    "answer": 1,
+    "analysis": "W=Fs cosθ=10×3×0.5=15 J。",
+    "formula": "W=Fs cosθ",
+    "mistakeReason": "忘记投影因子 cosθ。"
+  },
+  {
+    "id": "q064",
+    "chapter": "力学",
+    "knowledgePoint": "圆周运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "半径 2 m 的圆周运动，线速度 4 m/s，向心加速度为？（训练变式 64）",
+    "options": [
+      "2 m/s²",
+      "4 m/s²",
+      "8 m/s²",
+      "16 m/s²"
+    ],
+    "answer": 2,
+    "analysis": "aₙ=v²/r=16/2=8 m/s²。",
+    "formula": "aₙ=v²/r",
+    "mistakeReason": "把 r 放在分子。"
+  },
+  {
+    "id": "q065",
+    "chapter": "力学",
+    "knowledgePoint": "角动量守恒",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "无外力矩作用时，刚体转动过程中保持不变的是？（训练变式 65）",
+    "options": [
+      "角速度",
+      "转动惯量",
+      "角动量",
+      "动能"
+    ],
+    "answer": 2,
+    "analysis": "外力矩为零时角动量守恒。",
+    "formula": "L=Iω",
+    "mistakeReason": "误以为角速度必定守恒。"
+  },
+  {
+    "id": "q066",
+    "chapter": "热学",
+    "knowledgePoint": "理想气体状态方程",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "一定量理想气体温度升高、体积不变，则压强如何变化？（训练变式 66）",
+    "options": [
+      "减小",
+      "不变",
+      "增大",
+      "先增后减"
+    ],
+    "answer": 2,
+    "analysis": "PV=nRT，V、n 不变时 P 与 T 成正比。",
+    "formula": "PV=nRT",
+    "mistakeReason": "温度必须使用开尔文温标。"
+  },
+  {
+    "id": "q067",
+    "chapter": "热学",
+    "knowledgePoint": "热力学第一定律",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "系统吸热 100 J，对外做功 40 J，内能变化为？（训练变式 67）",
+    "options": [
+      "-140 J",
+      "-60 J",
+      "60 J",
+      "140 J"
+    ],
+    "answer": 2,
+    "analysis": "ΔU=Q-W=100-40=60 J。",
+    "formula": "ΔU=Q-W",
+    "mistakeReason": "功的正负号约定混乱。"
+  },
+  {
+    "id": "q068",
+    "chapter": "电磁学",
+    "knowledgePoint": "库仑定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "两点电荷间距离变为原来的 2 倍，库仑力变为原来的？（训练变式 68）",
+    "options": [
+      "2 倍",
+      "1/2",
+      "1/4",
+      "4 倍"
+    ],
+    "answer": 2,
+    "analysis": "F 与 r² 成反比。",
+    "formula": "F=kq₁q₂/r²",
+    "mistakeReason": "错把平方反比当线性反比。"
+  },
+  {
+    "id": "q069",
+    "chapter": "电磁学",
+    "knowledgePoint": "高斯定理",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "真空中闭合曲面包围净电荷 Q，其电通量为？（训练变式 69）",
+    "options": [
+      "Qε₀",
+      "Q/ε₀",
+      "0",
+      "kQ"
+    ],
+    "answer": 1,
+    "analysis": "高斯定理 Φ=Q内/ε₀。",
+    "formula": "∮E·dS=Q/ε₀",
+    "mistakeReason": "混淆电场强度与通量。"
+  },
+  {
+    "id": "q070",
+    "chapter": "电磁学",
+    "knowledgePoint": "洛伦兹力",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "带电粒子速度与匀强磁场平行时，磁场力大小为？（训练变式 70）",
+    "options": [
+      "qvB",
+      "qvB/2",
+      "0",
+      "与质量有关"
+    ],
+    "answer": 2,
+    "analysis": "F=qvBsinθ，θ=0。",
+    "formula": "F=qvBsinθ",
+    "mistakeReason": "忽略速度与磁场方向夹角。"
+  },
+  {
+    "id": "q071",
+    "chapter": "电磁学",
+    "knowledgePoint": "法拉第定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "线圈磁通量变化越快，感应电动势大小？（训练变式 71）",
+    "options": [
+      "越小",
+      "不变",
+      "越大",
+      "为零"
+    ],
+    "answer": 2,
+    "analysis": "感应电动势绝对值等于磁通量变化率。",
+    "formula": "ε=-N dΦ/dt",
+    "mistakeReason": "忽略负号仅表示楞次定律方向。"
+  },
+  {
+    "id": "q072",
+    "chapter": "光学",
+    "knowledgePoint": "杨氏双缝",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "杨氏双缝实验中，明纹条件是光程差为？（训练变式 72）",
+    "options": [
+      "(k+1/2)λ",
+      "kλ",
+      "λ/4",
+      "与波长无关"
+    ],
+    "answer": 1,
+    "analysis": "相长干涉的光程差为整数倍波长。",
+    "formula": "δ=kλ",
+    "mistakeReason": "与暗纹条件混淆。"
+  },
+  {
+    "id": "q073",
+    "chapter": "光学",
+    "knowledgePoint": "多普勒效应",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "声源向静止观察者靠近，观察到的频率？（训练变式 73）",
+    "options": [
+      "降低",
+      "升高",
+      "不变",
+      "先降低后升高"
+    ],
+    "answer": 1,
+    "analysis": "波前被压缩，接收频率升高。",
+    "formula": "f'=f v/(v-vs)",
+    "mistakeReason": "未区分声源运动和观察者运动。"
+  },
+  {
+    "id": "q074",
+    "chapter": "近代物理",
+    "knowledgePoint": "光电效应",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "在频率大于截止频率时，提高入射光强主要会增加？（训练变式 74）",
+    "options": [
+      "遏止电压",
+      "逸出功",
+      "光电子数",
+      "截止频率"
+    ],
+    "answer": 2,
+    "analysis": "光强增加意味着单位时间光子数增加。",
+    "formula": "E=hν",
+    "mistakeReason": "把光强作用与频率作用混淆。"
+  },
+  {
+    "id": "q075",
+    "chapter": "近代物理",
+    "knowledgePoint": "德布罗意波",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "粒子动量增大时，其德布罗意波长？（训练变式 75）",
+    "options": [
+      "增大",
+      "减小",
+      "不变",
+      "先增后减"
+    ],
+    "answer": 1,
+    "analysis": "λ=h/p，动量越大波长越短。",
+    "formula": "λ=h/p",
+    "mistakeReason": "忘记反比关系。"
+  },
+  {
+    "id": "q076",
+    "chapter": "力学",
+    "knowledgePoint": "匀变速直线运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "物体初速度为 2 m/s、加速度为 3 m/s²，2 s 后速度为？（训练变式 76）",
+    "options": [
+      "5 m/s",
+      "8 m/s",
+      "10 m/s",
+      "12 m/s"
+    ],
+    "answer": 1,
+    "analysis": "v=v₀+at=2+3×2=8 m/s。",
+    "formula": "v=v₀+at",
+    "mistakeReason": "漏乘时间或混淆位移公式。"
+  },
+  {
+    "id": "q077",
+    "chapter": "力学",
+    "knowledgePoint": "牛顿第二定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "质量 2 kg 的物体受合力 10 N，产生的加速度为？（训练变式 77）",
+    "options": [
+      "2 m/s²",
+      "5 m/s²",
+      "10 m/s²",
+      "20 m/s²"
+    ],
+    "answer": 1,
+    "analysis": "a=F/m=10/2=5 m/s²。",
+    "formula": "F=ma",
+    "mistakeReason": "未先求合力。"
+  },
+  {
+    "id": "q078",
+    "chapter": "力学",
+    "knowledgePoint": "功与能",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "水平拉力 10 N 拉物体移动 3 m，夹角 60°，拉力做功为？（训练变式 78）",
+    "options": [
+      "0 J",
+      "15 J",
+      "30 J",
+      "60 J"
+    ],
+    "answer": 1,
+    "analysis": "W=Fs cosθ=10×3×0.5=15 J。",
+    "formula": "W=Fs cosθ",
+    "mistakeReason": "忘记投影因子 cosθ。"
+  },
+  {
+    "id": "q079",
+    "chapter": "力学",
+    "knowledgePoint": "圆周运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "半径 2 m 的圆周运动，线速度 4 m/s，向心加速度为？（训练变式 79）",
+    "options": [
+      "2 m/s²",
+      "4 m/s²",
+      "8 m/s²",
+      "16 m/s²"
+    ],
+    "answer": 2,
+    "analysis": "aₙ=v²/r=16/2=8 m/s²。",
+    "formula": "aₙ=v²/r",
+    "mistakeReason": "把 r 放在分子。"
+  },
+  {
+    "id": "q080",
+    "chapter": "力学",
+    "knowledgePoint": "角动量守恒",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "无外力矩作用时，刚体转动过程中保持不变的是？（训练变式 80）",
+    "options": [
+      "角速度",
+      "转动惯量",
+      "角动量",
+      "动能"
+    ],
+    "answer": 2,
+    "analysis": "外力矩为零时角动量守恒。",
+    "formula": "L=Iω",
+    "mistakeReason": "误以为角速度必定守恒。"
+  },
+  {
+    "id": "q081",
+    "chapter": "热学",
+    "knowledgePoint": "理想气体状态方程",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "一定量理想气体温度升高、体积不变，则压强如何变化？（训练变式 81）",
+    "options": [
+      "减小",
+      "不变",
+      "增大",
+      "先增后减"
+    ],
+    "answer": 2,
+    "analysis": "PV=nRT，V、n 不变时 P 与 T 成正比。",
+    "formula": "PV=nRT",
+    "mistakeReason": "温度必须使用开尔文温标。"
+  },
+  {
+    "id": "q082",
+    "chapter": "热学",
+    "knowledgePoint": "热力学第一定律",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "系统吸热 100 J，对外做功 40 J，内能变化为？（训练变式 82）",
+    "options": [
+      "-140 J",
+      "-60 J",
+      "60 J",
+      "140 J"
+    ],
+    "answer": 2,
+    "analysis": "ΔU=Q-W=100-40=60 J。",
+    "formula": "ΔU=Q-W",
+    "mistakeReason": "功的正负号约定混乱。"
+  },
+  {
+    "id": "q083",
+    "chapter": "电磁学",
+    "knowledgePoint": "库仑定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "两点电荷间距离变为原来的 2 倍，库仑力变为原来的？（训练变式 83）",
+    "options": [
+      "2 倍",
+      "1/2",
+      "1/4",
+      "4 倍"
+    ],
+    "answer": 2,
+    "analysis": "F 与 r² 成反比。",
+    "formula": "F=kq₁q₂/r²",
+    "mistakeReason": "错把平方反比当线性反比。"
+  },
+  {
+    "id": "q084",
+    "chapter": "电磁学",
+    "knowledgePoint": "高斯定理",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "真空中闭合曲面包围净电荷 Q，其电通量为？（训练变式 84）",
+    "options": [
+      "Qε₀",
+      "Q/ε₀",
+      "0",
+      "kQ"
+    ],
+    "answer": 1,
+    "analysis": "高斯定理 Φ=Q内/ε₀。",
+    "formula": "∮E·dS=Q/ε₀",
+    "mistakeReason": "混淆电场强度与通量。"
+  },
+  {
+    "id": "q085",
+    "chapter": "电磁学",
+    "knowledgePoint": "洛伦兹力",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "带电粒子速度与匀强磁场平行时，磁场力大小为？（训练变式 85）",
+    "options": [
+      "qvB",
+      "qvB/2",
+      "0",
+      "与质量有关"
+    ],
+    "answer": 2,
+    "analysis": "F=qvBsinθ，θ=0。",
+    "formula": "F=qvBsinθ",
+    "mistakeReason": "忽略速度与磁场方向夹角。"
+  },
+  {
+    "id": "q086",
+    "chapter": "电磁学",
+    "knowledgePoint": "法拉第定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "线圈磁通量变化越快，感应电动势大小？（训练变式 86）",
+    "options": [
+      "越小",
+      "不变",
+      "越大",
+      "为零"
+    ],
+    "answer": 2,
+    "analysis": "感应电动势绝对值等于磁通量变化率。",
+    "formula": "ε=-N dΦ/dt",
+    "mistakeReason": "忽略负号仅表示楞次定律方向。"
+  },
+  {
+    "id": "q087",
+    "chapter": "光学",
+    "knowledgePoint": "杨氏双缝",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "杨氏双缝实验中，明纹条件是光程差为？（训练变式 87）",
+    "options": [
+      "(k+1/2)λ",
+      "kλ",
+      "λ/4",
+      "与波长无关"
+    ],
+    "answer": 1,
+    "analysis": "相长干涉的光程差为整数倍波长。",
+    "formula": "δ=kλ",
+    "mistakeReason": "与暗纹条件混淆。"
+  },
+  {
+    "id": "q088",
+    "chapter": "光学",
+    "knowledgePoint": "多普勒效应",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "声源向静止观察者靠近，观察到的频率？（训练变式 88）",
+    "options": [
+      "降低",
+      "升高",
+      "不变",
+      "先降低后升高"
+    ],
+    "answer": 1,
+    "analysis": "波前被压缩，接收频率升高。",
+    "formula": "f'=f v/(v-vs)",
+    "mistakeReason": "未区分声源运动和观察者运动。"
+  },
+  {
+    "id": "q089",
+    "chapter": "近代物理",
+    "knowledgePoint": "光电效应",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "在频率大于截止频率时，提高入射光强主要会增加？（训练变式 89）",
+    "options": [
+      "遏止电压",
+      "逸出功",
+      "光电子数",
+      "截止频率"
+    ],
+    "answer": 2,
+    "analysis": "光强增加意味着单位时间光子数增加。",
+    "formula": "E=hν",
+    "mistakeReason": "把光强作用与频率作用混淆。"
+  },
+  {
+    "id": "q090",
+    "chapter": "近代物理",
+    "knowledgePoint": "德布罗意波",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "粒子动量增大时，其德布罗意波长？（训练变式 90）",
+    "options": [
+      "增大",
+      "减小",
+      "不变",
+      "先增后减"
+    ],
+    "answer": 1,
+    "analysis": "λ=h/p，动量越大波长越短。",
+    "formula": "λ=h/p",
+    "mistakeReason": "忘记反比关系。"
+  },
+  {
+    "id": "q091",
+    "chapter": "力学",
+    "knowledgePoint": "匀变速直线运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "物体初速度为 2 m/s、加速度为 3 m/s²，2 s 后速度为？（训练变式 91）",
+    "options": [
+      "5 m/s",
+      "8 m/s",
+      "10 m/s",
+      "12 m/s"
+    ],
+    "answer": 1,
+    "analysis": "v=v₀+at=2+3×2=8 m/s。",
+    "formula": "v=v₀+at",
+    "mistakeReason": "漏乘时间或混淆位移公式。"
+  },
+  {
+    "id": "q092",
+    "chapter": "力学",
+    "knowledgePoint": "牛顿第二定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "质量 2 kg 的物体受合力 10 N，产生的加速度为？（训练变式 92）",
+    "options": [
+      "2 m/s²",
+      "5 m/s²",
+      "10 m/s²",
+      "20 m/s²"
+    ],
+    "answer": 1,
+    "analysis": "a=F/m=10/2=5 m/s²。",
+    "formula": "F=ma",
+    "mistakeReason": "未先求合力。"
+  },
+  {
+    "id": "q093",
+    "chapter": "力学",
+    "knowledgePoint": "功与能",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "水平拉力 10 N 拉物体移动 3 m，夹角 60°，拉力做功为？（训练变式 93）",
+    "options": [
+      "0 J",
+      "15 J",
+      "30 J",
+      "60 J"
+    ],
+    "answer": 1,
+    "analysis": "W=Fs cosθ=10×3×0.5=15 J。",
+    "formula": "W=Fs cosθ",
+    "mistakeReason": "忘记投影因子 cosθ。"
+  },
+  {
+    "id": "q094",
+    "chapter": "力学",
+    "knowledgePoint": "圆周运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "半径 2 m 的圆周运动，线速度 4 m/s，向心加速度为？（训练变式 94）",
+    "options": [
+      "2 m/s²",
+      "4 m/s²",
+      "8 m/s²",
+      "16 m/s²"
+    ],
+    "answer": 2,
+    "analysis": "aₙ=v²/r=16/2=8 m/s²。",
+    "formula": "aₙ=v²/r",
+    "mistakeReason": "把 r 放在分子。"
+  },
+  {
+    "id": "q095",
+    "chapter": "力学",
+    "knowledgePoint": "角动量守恒",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "无外力矩作用时，刚体转动过程中保持不变的是？（训练变式 95）",
+    "options": [
+      "角速度",
+      "转动惯量",
+      "角动量",
+      "动能"
+    ],
+    "answer": 2,
+    "analysis": "外力矩为零时角动量守恒。",
+    "formula": "L=Iω",
+    "mistakeReason": "误以为角速度必定守恒。"
+  },
+  {
+    "id": "q096",
+    "chapter": "热学",
+    "knowledgePoint": "理想气体状态方程",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "一定量理想气体温度升高、体积不变，则压强如何变化？（训练变式 96）",
+    "options": [
+      "减小",
+      "不变",
+      "增大",
+      "先增后减"
+    ],
+    "answer": 2,
+    "analysis": "PV=nRT，V、n 不变时 P 与 T 成正比。",
+    "formula": "PV=nRT",
+    "mistakeReason": "温度必须使用开尔文温标。"
+  },
+  {
+    "id": "q097",
+    "chapter": "热学",
+    "knowledgePoint": "热力学第一定律",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "系统吸热 100 J，对外做功 40 J，内能变化为？（训练变式 97）",
+    "options": [
+      "-140 J",
+      "-60 J",
+      "60 J",
+      "140 J"
+    ],
+    "answer": 2,
+    "analysis": "ΔU=Q-W=100-40=60 J。",
+    "formula": "ΔU=Q-W",
+    "mistakeReason": "功的正负号约定混乱。"
+  },
+  {
+    "id": "q098",
+    "chapter": "电磁学",
+    "knowledgePoint": "库仑定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "两点电荷间距离变为原来的 2 倍，库仑力变为原来的？（训练变式 98）",
+    "options": [
+      "2 倍",
+      "1/2",
+      "1/4",
+      "4 倍"
+    ],
+    "answer": 2,
+    "analysis": "F 与 r² 成反比。",
+    "formula": "F=kq₁q₂/r²",
+    "mistakeReason": "错把平方反比当线性反比。"
+  },
+  {
+    "id": "q099",
+    "chapter": "电磁学",
+    "knowledgePoint": "高斯定理",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "真空中闭合曲面包围净电荷 Q，其电通量为？（训练变式 99）",
+    "options": [
+      "Qε₀",
+      "Q/ε₀",
+      "0",
+      "kQ"
+    ],
+    "answer": 1,
+    "analysis": "高斯定理 Φ=Q内/ε₀。",
+    "formula": "∮E·dS=Q/ε₀",
+    "mistakeReason": "混淆电场强度与通量。"
+  },
+  {
+    "id": "q100",
+    "chapter": "电磁学",
+    "knowledgePoint": "洛伦兹力",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "带电粒子速度与匀强磁场平行时，磁场力大小为？（训练变式 100）",
+    "options": [
+      "qvB",
+      "qvB/2",
+      "0",
+      "与质量有关"
+    ],
+    "answer": 2,
+    "analysis": "F=qvBsinθ，θ=0。",
+    "formula": "F=qvBsinθ",
+    "mistakeReason": "忽略速度与磁场方向夹角。"
+  },
+  {
+    "id": "q101",
+    "chapter": "电磁学",
+    "knowledgePoint": "法拉第定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "线圈磁通量变化越快，感应电动势大小？（训练变式 101）",
+    "options": [
+      "越小",
+      "不变",
+      "越大",
+      "为零"
+    ],
+    "answer": 2,
+    "analysis": "感应电动势绝对值等于磁通量变化率。",
+    "formula": "ε=-N dΦ/dt",
+    "mistakeReason": "忽略负号仅表示楞次定律方向。"
+  },
+  {
+    "id": "q102",
+    "chapter": "光学",
+    "knowledgePoint": "杨氏双缝",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "杨氏双缝实验中，明纹条件是光程差为？（训练变式 102）",
+    "options": [
+      "(k+1/2)λ",
+      "kλ",
+      "λ/4",
+      "与波长无关"
+    ],
+    "answer": 1,
+    "analysis": "相长干涉的光程差为整数倍波长。",
+    "formula": "δ=kλ",
+    "mistakeReason": "与暗纹条件混淆。"
+  },
+  {
+    "id": "q103",
+    "chapter": "光学",
+    "knowledgePoint": "多普勒效应",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "声源向静止观察者靠近，观察到的频率？（训练变式 103）",
+    "options": [
+      "降低",
+      "升高",
+      "不变",
+      "先降低后升高"
+    ],
+    "answer": 1,
+    "analysis": "波前被压缩，接收频率升高。",
+    "formula": "f'=f v/(v-vs)",
+    "mistakeReason": "未区分声源运动和观察者运动。"
+  },
+  {
+    "id": "q104",
+    "chapter": "近代物理",
+    "knowledgePoint": "光电效应",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "在频率大于截止频率时，提高入射光强主要会增加？（训练变式 104）",
+    "options": [
+      "遏止电压",
+      "逸出功",
+      "光电子数",
+      "截止频率"
+    ],
+    "answer": 2,
+    "analysis": "光强增加意味着单位时间光子数增加。",
+    "formula": "E=hν",
+    "mistakeReason": "把光强作用与频率作用混淆。"
+  },
+  {
+    "id": "q105",
+    "chapter": "近代物理",
+    "knowledgePoint": "德布罗意波",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "粒子动量增大时，其德布罗意波长？（训练变式 105）",
+    "options": [
+      "增大",
+      "减小",
+      "不变",
+      "先增后减"
+    ],
+    "answer": 1,
+    "analysis": "λ=h/p，动量越大波长越短。",
+    "formula": "λ=h/p",
+    "mistakeReason": "忘记反比关系。"
+  },
+  {
+    "id": "q106",
+    "chapter": "力学",
+    "knowledgePoint": "匀变速直线运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "物体初速度为 2 m/s、加速度为 3 m/s²，2 s 后速度为？（训练变式 106）",
+    "options": [
+      "5 m/s",
+      "8 m/s",
+      "10 m/s",
+      "12 m/s"
+    ],
+    "answer": 1,
+    "analysis": "v=v₀+at=2+3×2=8 m/s。",
+    "formula": "v=v₀+at",
+    "mistakeReason": "漏乘时间或混淆位移公式。"
+  },
+  {
+    "id": "q107",
+    "chapter": "力学",
+    "knowledgePoint": "牛顿第二定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "质量 2 kg 的物体受合力 10 N，产生的加速度为？（训练变式 107）",
+    "options": [
+      "2 m/s²",
+      "5 m/s²",
+      "10 m/s²",
+      "20 m/s²"
+    ],
+    "answer": 1,
+    "analysis": "a=F/m=10/2=5 m/s²。",
+    "formula": "F=ma",
+    "mistakeReason": "未先求合力。"
+  },
+  {
+    "id": "q108",
+    "chapter": "力学",
+    "knowledgePoint": "功与能",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "水平拉力 10 N 拉物体移动 3 m，夹角 60°，拉力做功为？（训练变式 108）",
+    "options": [
+      "0 J",
+      "15 J",
+      "30 J",
+      "60 J"
+    ],
+    "answer": 1,
+    "analysis": "W=Fs cosθ=10×3×0.5=15 J。",
+    "formula": "W=Fs cosθ",
+    "mistakeReason": "忘记投影因子 cosθ。"
+  },
+  {
+    "id": "q109",
+    "chapter": "力学",
+    "knowledgePoint": "圆周运动",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "半径 2 m 的圆周运动，线速度 4 m/s，向心加速度为？（训练变式 109）",
+    "options": [
+      "2 m/s²",
+      "4 m/s²",
+      "8 m/s²",
+      "16 m/s²"
+    ],
+    "answer": 2,
+    "analysis": "aₙ=v²/r=16/2=8 m/s²。",
+    "formula": "aₙ=v²/r",
+    "mistakeReason": "把 r 放在分子。"
+  },
+  {
+    "id": "q110",
+    "chapter": "力学",
+    "knowledgePoint": "角动量守恒",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "无外力矩作用时，刚体转动过程中保持不变的是？（训练变式 110）",
+    "options": [
+      "角速度",
+      "转动惯量",
+      "角动量",
+      "动能"
+    ],
+    "answer": 2,
+    "analysis": "外力矩为零时角动量守恒。",
+    "formula": "L=Iω",
+    "mistakeReason": "误以为角速度必定守恒。"
+  },
+  {
+    "id": "q111",
+    "chapter": "热学",
+    "knowledgePoint": "理想气体状态方程",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "一定量理想气体温度升高、体积不变，则压强如何变化？（训练变式 111）",
+    "options": [
+      "减小",
+      "不变",
+      "增大",
+      "先增后减"
+    ],
+    "answer": 2,
+    "analysis": "PV=nRT，V、n 不变时 P 与 T 成正比。",
+    "formula": "PV=nRT",
+    "mistakeReason": "温度必须使用开尔文温标。"
+  },
+  {
+    "id": "q112",
+    "chapter": "热学",
+    "knowledgePoint": "热力学第一定律",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "系统吸热 100 J，对外做功 40 J，内能变化为？（训练变式 112）",
+    "options": [
+      "-140 J",
+      "-60 J",
+      "60 J",
+      "140 J"
+    ],
+    "answer": 2,
+    "analysis": "ΔU=Q-W=100-40=60 J。",
+    "formula": "ΔU=Q-W",
+    "mistakeReason": "功的正负号约定混乱。"
+  },
+  {
+    "id": "q113",
+    "chapter": "电磁学",
+    "knowledgePoint": "库仑定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "两点电荷间距离变为原来的 2 倍，库仑力变为原来的？（训练变式 113）",
+    "options": [
+      "2 倍",
+      "1/2",
+      "1/4",
+      "4 倍"
+    ],
+    "answer": 2,
+    "analysis": "F 与 r² 成反比。",
+    "formula": "F=kq₁q₂/r²",
+    "mistakeReason": "错把平方反比当线性反比。"
+  },
+  {
+    "id": "q114",
+    "chapter": "电磁学",
+    "knowledgePoint": "高斯定理",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "真空中闭合曲面包围净电荷 Q，其电通量为？（训练变式 114）",
+    "options": [
+      "Qε₀",
+      "Q/ε₀",
+      "0",
+      "kQ"
+    ],
+    "answer": 1,
+    "analysis": "高斯定理 Φ=Q内/ε₀。",
+    "formula": "∮E·dS=Q/ε₀",
+    "mistakeReason": "混淆电场强度与通量。"
+  },
+  {
+    "id": "q115",
+    "chapter": "电磁学",
+    "knowledgePoint": "洛伦兹力",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "带电粒子速度与匀强磁场平行时，磁场力大小为？（训练变式 115）",
+    "options": [
+      "qvB",
+      "qvB/2",
+      "0",
+      "与质量有关"
+    ],
+    "answer": 2,
+    "analysis": "F=qvBsinθ，θ=0。",
+    "formula": "F=qvBsinθ",
+    "mistakeReason": "忽略速度与磁场方向夹角。"
+  },
+  {
+    "id": "q116",
+    "chapter": "电磁学",
+    "knowledgePoint": "法拉第定律",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "线圈磁通量变化越快，感应电动势大小？（训练变式 116）",
+    "options": [
+      "越小",
+      "不变",
+      "越大",
+      "为零"
+    ],
+    "answer": 2,
+    "analysis": "感应电动势绝对值等于磁通量变化率。",
+    "formula": "ε=-N dΦ/dt",
+    "mistakeReason": "忽略负号仅表示楞次定律方向。"
+  },
+  {
+    "id": "q117",
+    "chapter": "光学",
+    "knowledgePoint": "杨氏双缝",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "杨氏双缝实验中，明纹条件是光程差为？（训练变式 117）",
+    "options": [
+      "(k+1/2)λ",
+      "kλ",
+      "λ/4",
+      "与波长无关"
+    ],
+    "answer": 1,
+    "analysis": "相长干涉的光程差为整数倍波长。",
+    "formula": "δ=kλ",
+    "mistakeReason": "与暗纹条件混淆。"
+  },
+  {
+    "id": "q118",
+    "chapter": "光学",
+    "knowledgePoint": "多普勒效应",
+    "difficulty": "进阶",
+    "type": "single",
+    "question": "声源向静止观察者靠近，观察到的频率？（训练变式 118）",
+    "options": [
+      "降低",
+      "升高",
+      "不变",
+      "先降低后升高"
+    ],
+    "answer": 1,
+    "analysis": "波前被压缩，接收频率升高。",
+    "formula": "f'=f v/(v-vs)",
+    "mistakeReason": "未区分声源运动和观察者运动。"
+  },
+  {
+    "id": "q119",
+    "chapter": "近代物理",
+    "knowledgePoint": "光电效应",
+    "difficulty": "挑战",
+    "type": "single",
+    "question": "在频率大于截止频率时，提高入射光强主要会增加？（训练变式 119）",
+    "options": [
+      "遏止电压",
+      "逸出功",
+      "光电子数",
+      "截止频率"
+    ],
+    "answer": 2,
+    "analysis": "光强增加意味着单位时间光子数增加。",
+    "formula": "E=hν",
+    "mistakeReason": "把光强作用与频率作用混淆。"
+  },
+  {
+    "id": "q120",
+    "chapter": "近代物理",
+    "knowledgePoint": "德布罗意波",
+    "difficulty": "基础",
+    "type": "single",
+    "question": "粒子动量增大时，其德布罗意波长？（训练变式 120）",
+    "options": [
+      "增大",
+      "减小",
+      "不变",
+      "先增后减"
+    ],
+    "answer": 1,
+    "analysis": "λ=h/p，动量越大波长越短。",
+    "formula": "λ=h/p",
+    "mistakeReason": "忘记反比关系。"
+  }
+]
