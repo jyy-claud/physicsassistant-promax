@@ -9,7 +9,7 @@ const questions = Array.from({length:120},(_,i)=>({...questionsSource[i%question
 const nav=[['/','学习概览',LayoutDashboard],['/knowledge','知识中心',BookOpen],['/questions','智能题库',ClipboardList],['/exam','考试系统',GraduationCap],['/mistakes','错题中心',X],['/formulas','公式中心',Sigma],['/plan','学习计划',CalendarDays],['/ai','AI 教师',Brain]] as const;
 function Layout({children}:{children:React.ReactNode}){const [open,setOpen]=useState(false);return <div className="min-h-screen"><header className="lg:hidden flex h-16 items-center justify-between bg-white px-4 border-b"><b className="text-brand-600">PhysicsAssistant</b><button onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button></header><aside className={`${open?'block':'hidden'} lg:block fixed z-20 lg:sticky top-0 h-screen w-64 bg-white border-r border-slate-100 p-5`}><div className="mb-9 flex gap-3 items-center"><span className="grid h-10 w-10 place-items-center rounded-xl bg-brand-600 text-white"><GraduationCap/></span><div><b>PhysicsAssistant</b><p className="text-xs text-slate-400">大学物理 Pro Max</p></div></div><nav className="space-y-1">{nav.map(([to,label,Icon])=><NavLink end={to==='/'} key={to} to={to} onClick={()=>setOpen(false)} className="nav-item"><Icon size={18}/>{label}</NavLink>)}</nav><div className="absolute bottom-6 text-xs text-slate-400">本地学习数据已自动保存</div></aside><main className="lg:ml-64 p-4 sm:p-7 max-w-[1600px]">{children}</main></div>}
 const Title=({title,desc}:{title:string;desc:string})=><div className="mb-6"><h1 className="text-2xl font-bold">{title}</h1><p className="mt-1 text-sm text-slate-500">{desc}</p></div>;
-function Dashboard()function Dashboard(){
+function Dashboard(){
 const {mistakes}=useLearningStore();
 
 const data=[
