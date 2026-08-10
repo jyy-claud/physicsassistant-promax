@@ -1,0 +1,674 @@
+[
+  {
+    "id": "f01",
+    "category": "力学",
+    "name": "速度定义",
+    "expression": "v=dr/dt",
+    "variables": "r：位置矢量；t：时间",
+    "condition": "连续运动",
+    "errors": "把速率与速度混同",
+    "related": [
+      "m01"
+    ]
+  },
+  {
+    "id": "f02",
+    "category": "力学",
+    "name": "匀变速速度",
+    "expression": "v=v₀+at",
+    "variables": "v₀：初速度；a：加速度",
+    "condition": "加速度恒定",
+    "errors": "单位不统一",
+    "related": [
+      "m01"
+    ]
+  },
+  {
+    "id": "f03",
+    "category": "力学",
+    "name": "牛顿第二定律",
+    "expression": "F=ma",
+    "variables": "F：合外力；m：质量",
+    "condition": "惯性参考系",
+    "errors": "未使用合力",
+    "related": [
+      "m02"
+    ]
+  },
+  {
+    "id": "f04",
+    "category": "力学",
+    "name": "动能定理",
+    "expression": "W=ΔEₖ",
+    "variables": "W：合力功",
+    "condition": "适用于质点",
+    "errors": "遗漏各力做功",
+    "related": [
+      "m03"
+    ]
+  },
+  {
+    "id": "f05",
+    "category": "力学",
+    "name": "机械能守恒",
+    "expression": "Eₖ+Eₚ=常量",
+    "variables": "Eₚ：势能",
+    "condition": "仅保守力做功",
+    "errors": "忽略摩擦",
+    "related": [
+      "m03"
+    ]
+  },
+  {
+    "id": "f06",
+    "category": "力学",
+    "name": "向心加速度",
+    "expression": "aₙ=v²/r",
+    "variables": "r：轨道半径",
+    "condition": "圆周运动",
+    "errors": "r 位置写反",
+    "related": [
+      "m04"
+    ]
+  },
+  {
+    "id": "f07",
+    "category": "力学",
+    "name": "角动量",
+    "expression": "L=Iω",
+    "variables": "I：转动惯量",
+    "condition": "定轴转动",
+    "errors": "惯量随轴变化",
+    "related": [
+      "m05"
+    ]
+  },
+  {
+    "id": "f08",
+    "category": "热学",
+    "name": "理想气体方程",
+    "expression": "PV=nRT",
+    "variables": "R：气体常量",
+    "condition": "理想气体",
+    "errors": "温度必须为 K",
+    "related": [
+      "t01"
+    ]
+  },
+  {
+    "id": "f09",
+    "category": "热学",
+    "name": "第一定律",
+    "expression": "ΔU=Q-W",
+    "variables": "W：系统对外功",
+    "condition": "统一正号约定",
+    "errors": "功正负错误",
+    "related": [
+      "t02"
+    ]
+  },
+  {
+    "id": "f10",
+    "category": "热学",
+    "name": "等温功",
+    "expression": "W=nRT ln(V₂/V₁)",
+    "variables": "T：恒温",
+    "condition": "准静态等温",
+    "errors": "漏写自然对数",
+    "related": [
+      "t01"
+    ]
+  },
+  {
+    "id": "f11",
+    "category": "热学",
+    "name": "熵变",
+    "expression": "ΔS=Qrev/T",
+    "variables": "Qrev：可逆热量",
+    "condition": "可逆过程",
+    "errors": "不可逆过程直接套用",
+    "related": [
+      "t02"
+    ]
+  },
+  {
+    "id": "f12",
+    "category": "电磁学",
+    "name": "库仑定律",
+    "expression": "F=kq₁q₂/r²",
+    "variables": "k：静电力常量",
+    "condition": "点电荷、真空",
+    "errors": "距离平方遗漏",
+    "related": [
+      "e01"
+    ]
+  },
+  {
+    "id": "f13",
+    "category": "电磁学",
+    "name": "电场强度",
+    "expression": "E=F/q",
+    "variables": "q：试探电荷",
+    "condition": "q 足够小",
+    "errors": "试探电荷取负",
+    "related": [
+      "e01"
+    ]
+  },
+  {
+    "id": "f14",
+    "category": "电磁学",
+    "name": "电势差",
+    "expression": "U=φA-φB",
+    "variables": "φ：电势",
+    "condition": "静电场",
+    "errors": "端点顺序颠倒",
+    "related": [
+      "e02"
+    ]
+  },
+  {
+    "id": "f15",
+    "category": "电磁学",
+    "name": "高斯定理",
+    "expression": "∮E·dS=Q/ε₀",
+    "variables": "ε₀：真空介电常数",
+    "condition": "任意闭合面",
+    "errors": "只用于高对称性场求 E",
+    "related": [
+      "e02"
+    ]
+  },
+  {
+    "id": "f16",
+    "category": "电磁学",
+    "name": "电容定义",
+    "expression": "C=Q/U",
+    "variables": "Q：极板电荷",
+    "condition": "线性电容器",
+    "errors": "C 不随 Q、U 改变",
+    "related": [
+      "e02"
+    ]
+  },
+  {
+    "id": "f17",
+    "category": "电磁学",
+    "name": "洛伦兹力",
+    "expression": "F=qvB sinθ",
+    "variables": "θ：v 与 B 夹角",
+    "condition": "磁场中运动电荷",
+    "errors": "平行时力为零",
+    "related": [
+      "e03"
+    ]
+  },
+  {
+    "id": "f18",
+    "category": "电磁学",
+    "name": "安培力",
+    "expression": "F=BIL sinθ",
+    "variables": "L：有效长度",
+    "condition": "匀强磁场直导线",
+    "errors": "方向用左手定则",
+    "related": [
+      "e03"
+    ]
+  },
+  {
+    "id": "f19",
+    "category": "电磁学",
+    "name": "法拉第定律",
+    "expression": "ε=-N dΦ/dt",
+    "variables": "N：匝数",
+    "condition": "磁通量变化",
+    "errors": "负号表示方向",
+    "related": [
+      "e04"
+    ]
+  },
+  {
+    "id": "f20",
+    "category": "电磁学",
+    "name": "磁通量",
+    "expression": "Φ=BS cosθ",
+    "variables": "S：面积",
+    "condition": "匀强磁场平面",
+    "errors": "角度为 B 与法线夹角",
+    "related": [
+      "e04"
+    ]
+  },
+  {
+    "id": "f21",
+    "category": "光学",
+    "name": "波速关系",
+    "expression": "v=λf",
+    "variables": "λ：波长；f：频率",
+    "condition": "同一介质",
+    "errors": "频率由源决定",
+    "related": [
+      "o01"
+    ]
+  },
+  {
+    "id": "f22",
+    "category": "光学",
+    "name": "双缝明纹",
+    "expression": "δ=kλ",
+    "variables": "k：整数级次",
+    "condition": "相干光",
+    "errors": "光程差非几何路程",
+    "related": [
+      "o01"
+    ]
+  },
+  {
+    "id": "f23",
+    "category": "光学",
+    "name": "双缝暗纹",
+    "expression": "δ=(k+1/2)λ",
+    "variables": "k：整数",
+    "condition": "相干光",
+    "errors": "与明纹混淆",
+    "related": [
+      "o01"
+    ]
+  },
+  {
+    "id": "f24",
+    "category": "光学",
+    "name": "薄透镜成像",
+    "expression": "1/f=1/u+1/v",
+    "variables": "u：物距；v：像距",
+    "condition": "近轴光线",
+    "errors": "符号规则不统一",
+    "related": [
+      "o02"
+    ]
+  },
+  {
+    "id": "f25",
+    "category": "近代物理",
+    "name": "光子能量",
+    "expression": "E=hν",
+    "variables": "h：普朗克常量",
+    "condition": "单个光子",
+    "errors": "光强不决定单光子能量",
+    "related": [
+      "n01"
+    ]
+  },
+  {
+    "id": "f26",
+    "category": "近代物理",
+    "name": "光电方程",
+    "expression": "hν=W₀+Eₖmax",
+    "variables": "W₀：逸出功",
+    "condition": "光电效应",
+    "errors": "频率低于阈值无光电效应",
+    "related": [
+      "n01"
+    ]
+  },
+  {
+    "id": "f27",
+    "category": "近代物理",
+    "name": "德布罗意关系",
+    "expression": "λ=h/p",
+    "variables": "p：动量",
+    "condition": "微观粒子",
+    "errors": "反比关系",
+    "related": [
+      "n02"
+    ]
+  },
+  {
+    "id": "f28",
+    "category": "近代物理",
+    "name": "质能关系",
+    "expression": "E=mc²",
+    "variables": "c：真空光速",
+    "condition": "静质量能",
+    "errors": "注意总能与静能",
+    "related": [
+      "n02"
+    ]
+  },
+  {
+    "id": "f29",
+    "category": "力学",
+    "name": "速度定义（拓展 29）",
+    "expression": "v=dr/dt",
+    "variables": "r：位置矢量；t：时间",
+    "condition": "连续运动",
+    "errors": "把速率与速度混同",
+    "related": [
+      "m01"
+    ]
+  },
+  {
+    "id": "f30",
+    "category": "力学",
+    "name": "匀变速速度（拓展 30）",
+    "expression": "v=v₀+at",
+    "variables": "v₀：初速度；a：加速度",
+    "condition": "加速度恒定",
+    "errors": "单位不统一",
+    "related": [
+      "m01"
+    ]
+  },
+  {
+    "id": "f31",
+    "category": "力学",
+    "name": "牛顿第二定律（拓展 31）",
+    "expression": "F=ma",
+    "variables": "F：合外力；m：质量",
+    "condition": "惯性参考系",
+    "errors": "未使用合力",
+    "related": [
+      "m02"
+    ]
+  },
+  {
+    "id": "f32",
+    "category": "力学",
+    "name": "动能定理（拓展 32）",
+    "expression": "W=ΔEₖ",
+    "variables": "W：合力功",
+    "condition": "适用于质点",
+    "errors": "遗漏各力做功",
+    "related": [
+      "m03"
+    ]
+  },
+  {
+    "id": "f33",
+    "category": "力学",
+    "name": "机械能守恒（拓展 33）",
+    "expression": "Eₖ+Eₚ=常量",
+    "variables": "Eₚ：势能",
+    "condition": "仅保守力做功",
+    "errors": "忽略摩擦",
+    "related": [
+      "m03"
+    ]
+  },
+  {
+    "id": "f34",
+    "category": "力学",
+    "name": "向心加速度（拓展 34）",
+    "expression": "aₙ=v²/r",
+    "variables": "r：轨道半径",
+    "condition": "圆周运动",
+    "errors": "r 位置写反",
+    "related": [
+      "m04"
+    ]
+  },
+  {
+    "id": "f35",
+    "category": "力学",
+    "name": "角动量（拓展 35）",
+    "expression": "L=Iω",
+    "variables": "I：转动惯量",
+    "condition": "定轴转动",
+    "errors": "惯量随轴变化",
+    "related": [
+      "m05"
+    ]
+  },
+  {
+    "id": "f36",
+    "category": "热学",
+    "name": "理想气体方程（拓展 36）",
+    "expression": "PV=nRT",
+    "variables": "R：气体常量",
+    "condition": "理想气体",
+    "errors": "温度必须为 K",
+    "related": [
+      "t01"
+    ]
+  },
+  {
+    "id": "f37",
+    "category": "热学",
+    "name": "第一定律（拓展 37）",
+    "expression": "ΔU=Q-W",
+    "variables": "W：系统对外功",
+    "condition": "统一正号约定",
+    "errors": "功正负错误",
+    "related": [
+      "t02"
+    ]
+  },
+  {
+    "id": "f38",
+    "category": "热学",
+    "name": "等温功（拓展 38）",
+    "expression": "W=nRT ln(V₂/V₁)",
+    "variables": "T：恒温",
+    "condition": "准静态等温",
+    "errors": "漏写自然对数",
+    "related": [
+      "t01"
+    ]
+  },
+  {
+    "id": "f39",
+    "category": "热学",
+    "name": "熵变（拓展 39）",
+    "expression": "ΔS=Qrev/T",
+    "variables": "Qrev：可逆热量",
+    "condition": "可逆过程",
+    "errors": "不可逆过程直接套用",
+    "related": [
+      "t02"
+    ]
+  },
+  {
+    "id": "f40",
+    "category": "电磁学",
+    "name": "库仑定律（拓展 40）",
+    "expression": "F=kq₁q₂/r²",
+    "variables": "k：静电力常量",
+    "condition": "点电荷、真空",
+    "errors": "距离平方遗漏",
+    "related": [
+      "e01"
+    ]
+  },
+  {
+    "id": "f41",
+    "category": "电磁学",
+    "name": "电场强度（拓展 41）",
+    "expression": "E=F/q",
+    "variables": "q：试探电荷",
+    "condition": "q 足够小",
+    "errors": "试探电荷取负",
+    "related": [
+      "e01"
+    ]
+  },
+  {
+    "id": "f42",
+    "category": "电磁学",
+    "name": "电势差（拓展 42）",
+    "expression": "U=φA-φB",
+    "variables": "φ：电势",
+    "condition": "静电场",
+    "errors": "端点顺序颠倒",
+    "related": [
+      "e02"
+    ]
+  },
+  {
+    "id": "f43",
+    "category": "电磁学",
+    "name": "高斯定理（拓展 43）",
+    "expression": "∮E·dS=Q/ε₀",
+    "variables": "ε₀：真空介电常数",
+    "condition": "任意闭合面",
+    "errors": "只用于高对称性场求 E",
+    "related": [
+      "e02"
+    ]
+  },
+  {
+    "id": "f44",
+    "category": "电磁学",
+    "name": "电容定义（拓展 44）",
+    "expression": "C=Q/U",
+    "variables": "Q：极板电荷",
+    "condition": "线性电容器",
+    "errors": "C 不随 Q、U 改变",
+    "related": [
+      "e02"
+    ]
+  },
+  {
+    "id": "f45",
+    "category": "电磁学",
+    "name": "洛伦兹力（拓展 45）",
+    "expression": "F=qvB sinθ",
+    "variables": "θ：v 与 B 夹角",
+    "condition": "磁场中运动电荷",
+    "errors": "平行时力为零",
+    "related": [
+      "e03"
+    ]
+  },
+  {
+    "id": "f46",
+    "category": "电磁学",
+    "name": "安培力（拓展 46）",
+    "expression": "F=BIL sinθ",
+    "variables": "L：有效长度",
+    "condition": "匀强磁场直导线",
+    "errors": "方向用左手定则",
+    "related": [
+      "e03"
+    ]
+  },
+  {
+    "id": "f47",
+    "category": "电磁学",
+    "name": "法拉第定律（拓展 47）",
+    "expression": "ε=-N dΦ/dt",
+    "variables": "N：匝数",
+    "condition": "磁通量变化",
+    "errors": "负号表示方向",
+    "related": [
+      "e04"
+    ]
+  },
+  {
+    "id": "f48",
+    "category": "电磁学",
+    "name": "磁通量（拓展 48）",
+    "expression": "Φ=BS cosθ",
+    "variables": "S：面积",
+    "condition": "匀强磁场平面",
+    "errors": "角度为 B 与法线夹角",
+    "related": [
+      "e04"
+    ]
+  },
+  {
+    "id": "f49",
+    "category": "光学",
+    "name": "波速关系（拓展 49）",
+    "expression": "v=λf",
+    "variables": "λ：波长；f：频率",
+    "condition": "同一介质",
+    "errors": "频率由源决定",
+    "related": [
+      "o01"
+    ]
+  },
+  {
+    "id": "f50",
+    "category": "光学",
+    "name": "双缝明纹（拓展 50）",
+    "expression": "δ=kλ",
+    "variables": "k：整数级次",
+    "condition": "相干光",
+    "errors": "光程差非几何路程",
+    "related": [
+      "o01"
+    ]
+  },
+  {
+    "id": "f51",
+    "category": "光学",
+    "name": "双缝暗纹（拓展 51）",
+    "expression": "δ=(k+1/2)λ",
+    "variables": "k：整数",
+    "condition": "相干光",
+    "errors": "与明纹混淆",
+    "related": [
+      "o01"
+    ]
+  },
+  {
+    "id": "f52",
+    "category": "光学",
+    "name": "薄透镜成像（拓展 52）",
+    "expression": "1/f=1/u+1/v",
+    "variables": "u：物距；v：像距",
+    "condition": "近轴光线",
+    "errors": "符号规则不统一",
+    "related": [
+      "o02"
+    ]
+  },
+  {
+    "id": "f53",
+    "category": "近代物理",
+    "name": "光子能量（拓展 53）",
+    "expression": "E=hν",
+    "variables": "h：普朗克常量",
+    "condition": "单个光子",
+    "errors": "光强不决定单光子能量",
+    "related": [
+      "n01"
+    ]
+  },
+  {
+    "id": "f54",
+    "category": "近代物理",
+    "name": "光电方程（拓展 54）",
+    "expression": "hν=W₀+Eₖmax",
+    "variables": "W₀：逸出功",
+    "condition": "光电效应",
+    "errors": "频率低于阈值无光电效应",
+    "related": [
+      "n01"
+    ]
+  },
+  {
+    "id": "f55",
+    "category": "近代物理",
+    "name": "德布罗意关系（拓展 55）",
+    "expression": "λ=h/p",
+    "variables": "p：动量",
+    "condition": "微观粒子",
+    "errors": "反比关系",
+    "related": [
+      "n02"
+    ]
+  },
+  {
+    "id": "f56",
+    "category": "近代物理",
+    "name": "质能关系（拓展 56）",
+    "expression": "E=mc²",
+    "variables": "c：真空光速",
+    "condition": "静质量能",
+    "errors": "注意总能与静能",
+    "related": [
+      "n02"
+    ]
+  }
+]

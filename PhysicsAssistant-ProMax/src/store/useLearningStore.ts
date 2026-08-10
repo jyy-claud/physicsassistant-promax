@@ -1,0 +1,6 @@
+import { create } from 'zustand';
+type AnswerRecord = { selected:number; submitted?:boolean };
+type State = { favorites:string[]; mistakes:Record<string,number>; answers:Record<string,AnswerRecord>; toggleFavorite:(id:string)=>void; saveAnswer:(id:string,selected:number)=>void; submit:(id:string,correct:boolean)=>void; resetExam:()=>void };
+const key='physicsassistant-promax';
+const load=()=>{ try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return{}} };
+export const useLearningStore=create<State>((set,get)=>({ favorites:load().favorites||[], mistakes:load().mistakes||{}, answers:load().answers||{}, toggleFavorite:(id)=>set(s=>{const favorites=s.favorites.includes(id)?s.favorites.filter(x=>x!==id):[...s.favorites,id]; localStorage.setItem(key,JSON.stringify({...s,favorites}));return{favorites}}), saveAnswer:(id,selected)=>set(s=>{const answers={...s.answers,[id]:{selected}};localStorage.setItem(key,JSON.stringify({...s,answers}));return{answers}}), submit:(id,correct)=>set(s=>{const answers={...s.answers,[id]:{...s.answers[id],submitted:true}};const mistakes=correct?s.mistakes:{...s.mistakes,[id]:(s.mistakes[id]||0)+1};localStorage.setItem(key,JSON.stringify({...s,answers,mistakes}));return{answers,mistakes}}), resetExam:()=>set(s=>{localStorage.setItem(key,JSON.stringify({...s,answers:{}}));return{answers:{}}}) }));
