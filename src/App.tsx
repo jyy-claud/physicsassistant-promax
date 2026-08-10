@@ -9,9 +9,185 @@ const questions = Array.from({length:120},(_,i)=>({...questionsSource[i%question
 const nav=[['/','学习概览',LayoutDashboard],['/knowledge','知识中心',BookOpen],['/questions','智能题库',ClipboardList],['/exam','考试系统',GraduationCap],['/mistakes','错题中心',X],['/formulas','公式中心',Sigma],['/plan','学习计划',CalendarDays],['/ai','AI 教师',Brain]] as const;
 function Layout({children}:{children:React.ReactNode}){const [open,setOpen]=useState(false);return <div className="min-h-screen"><header className="lg:hidden flex h-16 items-center justify-between bg-white px-4 border-b"><b className="text-brand-600">PhysicsAssistant</b><button onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button></header><aside className={`${open?'block':'hidden'} lg:block fixed z-20 lg:sticky top-0 h-screen w-64 bg-white border-r border-slate-100 p-5`}><div className="mb-9 flex gap-3 items-center"><span className="grid h-10 w-10 place-items-center rounded-xl bg-brand-600 text-white"><GraduationCap/></span><div><b>PhysicsAssistant</b><p className="text-xs text-slate-400">大学物理 Pro Max</p></div></div><nav className="space-y-1">{nav.map(([to,label,Icon])=><NavLink end={to==='/'} key={to} to={to} onClick={()=>setOpen(false)} className="nav-item"><Icon size={18}/>{label}</NavLink>)}</nav><div className="absolute bottom-6 text-xs text-slate-400">本地学习数据已自动保存</div></aside><main className="lg:ml-64 p-4 sm:p-7 max-w-[1600px]">{children}</main></div>}
 const Title=({title,desc}:{title:string;desc:string})=><div className="mb-6"><h1 className="text-2xl font-bold">{title}</h1><p className="mt-1 text-sm text-slate-500">{desc}</p></div>;
-function Dashboard(){const {mistakes}=useLearningStore();const data=[{n:'力学',v:78},{n:'热学',v:64},{n:'电磁',v:52},{n:'光学',v:71}];return <><Title title="早上好，林同学 👋" desc="让每一次练习，都变成更清晰的物理直觉。"/><section className="grid grid-cols-2 lg:grid-cols-4 gap-4">{[['学习等级','Lv. 6 · 探索者'],['连续学习','12 天'],['累计时长','18.5 小时'],['完成题数','126 题']].map(x=><div className="card p-5" key={x[0]}><p className="text-sm text-slate-500">{x[0]}</p><b className="mt-2 block text-xl">{x[1]}</b></div>)}</section><section className="grid lg:grid-cols-3 gap-5 mt-5"><div className="card p-5 lg:col-span-2"><h2 className="font-bold">能力雷达 · 章节掌握度</h2><div className="h-64 mt-4"><div className="h-64 w-full mt-4">
-  <ResponsiveContainer width="100%" height="100%">
-    <BarChart data={data}><XAxis dataKey="n"/><YAxis domain={[0,100]}/><Tooltip/><Bar dataKey="v" fill="#2563eb" radius={[7,7,0,0]}/></BarChart></ResponsiveContainer></div></div><div className="card p-5 bg-gradient-to-br from-blue-600 to-indigo-700 text-white"><p className="text-blue-100">今日任务</p><h2 className="mt-3 text-xl font-bold">静电场高斯定理</h2><p className="mt-2 text-sm text-blue-100">阅读 12 分钟 · 练习 8 题</p><NavLink to="/questions" className="mt-5 inline-block rounded-xl bg-white px-4 py-2 text-sm font-medium text-blue-700">开始训练</NavLink></div></section><section className="grid lg:grid-cols-2 gap-5 mt-5"><div className="card p-5"><h2 className="font-bold">AI 学习建议</h2><p className="mt-3 text-sm leading-6 text-slate-600">电磁学是当前薄弱区。建议先复习“高斯定理的对称性选择”，再完成 5 道基础题。{Object.keys(mistakes).length>0&&` 你已有 ${Object.keys(mistakes).length} 道错题可复盘。`}</p></div><div className="card p-5"><h2 className="font-bold">今日进度</h2><div className="mt-4 h-3 overflow-hidden rounded-full bg-slate-100"><div className="h-full w-[65%] rounded-full bg-brand-600"/></div><p className="mt-2 text-sm text-slate-500">已完成 2 / 3 项任务</p></div></section></>}
+function Dashboard()function Dashboard(){
+const {mistakes}=useLearningStore();
+
+const data=[
+ {n:'力学',v:78},
+ {n:'热学',v:64},
+ {n:'电磁',v:52},
+ {n:'光学',v:71}
+];
+
+return (
+<>
+<Title 
+title="早上好，林同学 👋"
+desc="让每一次练习，都变成更清晰的物理直觉。"
+/>
+
+
+<section className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+
+{
+[
+['学习等级','Lv. 6 · 探索者'],
+['连续学习','12 天'],
+['累计时长','18.5 小时'],
+['完成题数','126 题']
+].map(x=>
+
+<div className="card p-5" key={x[0]}>
+<p className="text-sm text-slate-500">
+{x[0]}
+</p>
+
+<b className="mt-2 block text-xl">
+{x[1]}
+</b>
+
+</div>
+
+)
+}
+
+</section>
+
+
+
+<section className="grid lg:grid-cols-3 gap-5 mt-5">
+
+
+<div className="card p-5 lg:col-span-2">
+
+<h2 className="font-bold">
+能力雷达 · 章节掌握度
+</h2>
+
+
+<div className="h-64 mt-4">
+
+<ResponsiveContainer width="100%" height="100%">
+
+<BarChart data={data}>
+
+<XAxis dataKey="n"/>
+
+<YAxis domain={[0,100]}/>
+
+<Tooltip/>
+
+<Bar 
+dataKey="v"
+fill="#2563eb"
+radius={[7,7,0,0]}
+/>
+
+
+</BarChart>
+
+</ResponsiveContainer>
+
+
+</div>
+
+
+</div>
+
+
+
+<div className="card p-5 bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
+
+
+<p className="text-blue-100">
+今日任务
+</p>
+
+
+<h2 className="mt-3 text-xl font-bold">
+静电场高斯定理
+</h2>
+
+
+<p className="mt-2 text-sm text-blue-100">
+阅读12分钟 · 练习8题
+</p>
+
+
+<NavLink 
+to="/questions"
+className="mt-5 inline-block rounded-xl bg-white px-4 py-2 text-sm font-medium text-blue-700"
+>
+
+开始训练
+
+</NavLink>
+
+
+</div>
+
+
+</section>
+
+
+
+<section className="grid lg:grid-cols-2 gap-5 mt-5">
+
+
+<div className="card p-5">
+
+<h2 className="font-bold">
+AI 学习建议
+</h2>
+
+
+<p className="mt-3 text-sm leading-6 text-slate-600">
+
+电磁学是当前薄弱区。
+建议先复习“高斯定理的对称性选择”，
+再完成5道基础题。
+
+{
+Object.keys(mistakes).length>0 &&
+`你已有${Object.keys(mistakes).length}道错题可复盘。`
+}
+
+</p>
+
+</div>
+
+
+
+<div className="card p-5">
+
+<h2 className="font-bold">
+今日进度
+</h2>
+
+
+<div className="mt-4 h-3 overflow-hidden rounded-full bg-slate-100">
+
+<div className="h-full w-[65%] rounded-full bg-brand-600"/>
+
+</div>
+
+
+<p className="mt-2 text-sm text-slate-500">
+已完成2 / 3项任务
+</p>
+
+
+</div>
+
+
+</section>
+
+
+</>
+
+)
+
+}
 function Knowledge(){const [selected,setSelected]=useState(knowledge[0]);return <><Title title="知识中心" desc="按讲义章节构建的大学物理知识网络。"/><div className="grid lg:grid-cols-3 gap-5"><div className="card p-3">{knowledge.map(k=><button key={k.id} onClick={()=>setSelected(k)} className={`w-full text-left rounded-xl p-4 mb-1 ${selected.id===k.id?'bg-brand-50 text-brand-600':'hover:bg-slate-50'}`}><span className="text-xs">{k.category}</span><b className="block mt-1">{k.name}</b></button>)}</div><article className="card p-6 lg:col-span-2"><span className="text-sm text-brand-600">{selected.category}</span><h2 className="text-2xl font-bold mt-1">{selected.name}</h2><p className="mt-5 leading-7 text-slate-600">{selected.definition}</p><h3 className="font-bold mt-6">核心公式</h3><div className="flex gap-2 flex-wrap mt-2">{selected.formulas.map(f=><code className="rounded-lg bg-blue-50 px-3 py-2 text-brand-600" key={f}>{f}</code>)}</div><h3 className="font-bold mt-6">理解与推导</h3><p className="mt-2 text-slate-600">{selected.derivation}</p><h3 className="font-bold mt-6">易错点</h3><ul className="mt-2 list-disc pl-5 text-slate-600">{selected.traps.map(t=><li key={t}>{t}</li>)}</ul></article></div></>}
 function Questions(){const [search,setSearch]=useState('');const [chapter,setChapter]=useState('全部');const {favorites,toggleFavorite}=useLearningStore();const list=questions.filter(q=>(chapter==='全部'||q.chapter===chapter)&&q.question.includes(search));return <><Title title="智能题库" desc={`已加载 ${questions.length} 道本地题目，支持分类、收藏与练习。`}/><div className="flex gap-3 flex-wrap mb-5"><input className="input" value={search} onChange={e=>setSearch(e.target.value)} placeholder="搜索题目关键词"/>{['全部','力学','热学','电磁学','光学','近代物理'].map(c=><button onClick={()=>setChapter(c)} key={c} className={chapter===c?'btn':'btn-soft'}>{c}</button>)}</div><div className="space-y-3">{list.slice(0,24).map(q=><div className="card p-5" key={q.id}><div className="flex justify-between gap-3"><span className="text-xs text-brand-600">{q.chapter} · {q.knowledgePoint} · {q.difficulty}</span><button onClick={()=>toggleFavorite(q.id)} className="text-amber-400"><Star size={19} fill={favorites.includes(q.id)?'currentColor':'none'}/></button></div><p className="mt-2 font-medium">{q.question}</p><div className="mt-3 grid sm:grid-cols-2 gap-2">{q.options.map((o,i)=><span key={o} className="rounded-lg bg-slate-50 px-3 py-2 text-sm">{String.fromCharCode(65+i)}. {o}</span>)}</div></div>)}</div></>}
 function Exam(){const navigate=useNavigate();const {answers,saveAnswer,submit,resetExam}=useLearningStore();const exam=questions.slice(0,10);const done=exam.filter(q=>answers[q.id]?.submitted).length;const score=exam.reduce((s,q)=>s+(answers[q.id]?.submitted&&answers[q.id].selected===q.answer?10:0),0);return <><Title title="考试系统" desc="模拟期末考试 · 10 题 · 20 分钟 · 自动保存"/><div className="grid lg:grid-cols-[1fr_280px] gap-5"><div className="space-y-4">{exam.map((q,i)=>{const a=answers[q.id];return <div className="card p-5" key={q.id}><b className="text-brand-600">{i+1}. </b>{q.question}<div className="mt-4 grid gap-2">{q.options.map((o,j)=><button onClick={()=>saveAnswer(q.id,j)} key={o} className={`rounded-xl border p-3 text-left text-sm ${a?.selected===j?'border-brand-500 bg-brand-50':'border-slate-200'}`}>{String.fromCharCode(65+j)}. {o}</button>)}</div>{a?.submitted&&<p className={`mt-3 text-sm ${a.selected===q.answer?'text-emerald-600':'text-red-500'}`}>{a.selected===q.answer?'回答正确！':'答案：'+String.fromCharCode(65+q.answer)+'。'+q.analysis}</p>}</div>})}</div><aside className="card h-fit p-5 lg:sticky top-5"><h2 className="font-bold">答题卡</h2><div className="mt-3 grid grid-cols-5 gap-2">{exam.map((q,i)=><span className={`grid h-9 place-items-center rounded-lg text-sm ${answers[q.id]?'bg-brand-100 text-brand-600':'bg-slate-100'}`} key={q.id}>{i+1}</span>)}</div><p className="mt-5 text-sm text-slate-500">已完成 {done} / {exam.length}</p><button className="btn w-full mt-3" onClick={()=>{exam.forEach(q=>submit(q.id,answers[q.id]?.selected===q.answer));}}>提交并评分</button>{done===exam.length&&<><p className="mt-4 font-bold text-lg">成绩：{score} / 100</p><button className="btn-soft mt-2 w-full" onClick={()=>{resetExam();navigate('/exam')}}>重新开始</button></>}</aside></div></>}
